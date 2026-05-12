@@ -57,6 +57,12 @@ document.getElementById(
   "music"
 );
 
+/* LOCK SCROLL SAAT OPENING */
+
+document.body.classList.add(
+  "lock-scroll"
+);
+
 /* =========================
    OPEN INVITATION
 ========================= */
@@ -95,6 +101,12 @@ if(openInvitation){
 
       mainContent.classList.add(
         "show"
+      );
+
+      /* ENABLE SCROLL */
+
+      document.body.classList.remove(
+        "lock-scroll"
       );
 
       /* Show navbar */
