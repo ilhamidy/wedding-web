@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <title>
+    Wedding Invitation
+  </title>
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+  <!-- FONT AWESOME -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link
+    href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+    rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="style.css">
+</head>
+
+<body>
+  <canvas id="leafCanvas"></canvas>
+
+  <section class="opening" id="opening">
+    <div class="opening-overlay"></div>
+    <div class="decor-top">
+      <img
+        src="assets/floral-top.webp"
+        alt="">
+    </div>
+    <div class="decor-bottom">
+      <img
+        src="assets/floral-bottom.webp"
+        alt="">
+    </div>
+
+    <div class="opening-content">
+      <p class="opening-subtitle">The Wedding Of</p>
+      <h1>Ilham & Aisyah</h1>
+      <p class="opening-date">12 Januari 2026</p>
+      <div class="guest-box">
+        <p>Kepada Yth.</p>
+        <h3>Tamu Undangan</h3>
+      </div>
+      <!-- BUTTON -->
+      <button id="openInvitation">Buka Undangan</button>
+    </div>
+  </section>
+
+  <nav class="floating-nav">
+    <a href="#home">Home</a>
+    <a href="#couple">Mempelai</a>
+    <a href="#countdown">Countdown</a>
+    <a href="#event">Acara</a>
+    <a href="#story">Story</a>
+    <a href="#adab">Adab</a>
+    <a href="#gift">Kado</a>
+  </nav>
+  <!--  versi mobile -->
+  <nav class="floating-nav-mobile">
+    <a href="#home"><i class="fa-solid fa-house"></i></a>
+    <a href="#couple"><i class="fa-solid fa-heart"></i></a>
+    <a href="#countdown"><i class="fa-solid fa-clock"></i></a>
+    <a href="#event"><i class="fa-solid fa-calendar-days"></i></a>
+    <a href="#story"><i class="fa-solid fa-book-open"></i></a>
+    <a href="#adab"><i class="fa-solid fa-hands-praying"></i></a>
+    <a href="#gift"><i class="fa-solid fa-gift"></i></a>
+  </nav>
+  <main id="mainContent">
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-leaf-shadow">
+        <img src="assets/leaf-shadow.webp" alt="">
+      </div>
+      <div class="hero-content">
+        <p class="hero-subtitle" data-aos="fade-up">The Wedding Of</p>
+        <h1 data-aos="zoom-in">Ilham<span>&</span>Aisyah</h1>
+        <div class="hero-divider" data-aos="fade-up"></div>
+        <p class="hero-date" data-aos="fade-up">12 Januari 2026</p>
+        <div class="save-date-box" data-aos="fade-up">
+        <span class="save-date-btn">
+          <i class="fa-regular fa-calendar-check"></i>Save the date
+        </span>
+    </div>
+      </div>
+        </section>
+    <!-- MEMPELAI SECTION -->
+          <section class="couple-section" id="couple">
+      <!-- TITLE -->
+            <div class="section-title" data-aos="fade-up">
+              <p>The Bride & Groom</p>
+              <h2>Mempelai</h2>
+            </div>
+
+            <div class="couple-wrapper">
+        <!-- MEMPELAI PRIA -->
+        <div
+          class="person-card"
+          data-aos="fade-right"
+        >
+
+          <img
+            src="assets/mempelai-p.webp"
+            alt=""
+          >
+
+          <h3>
+            Ilham Saputra
+          </h3>
+
+          <p>
+
+            Putra dari
+            <br>
+            Bpk. Ahmad & Ibu Lina
+
+          </p>
+
+        </div>
+
+        <!-- SYMBOL -->
+
+        <div class="couple-symbol">
+          &
+        </div>
+
+        <!-- ========================= -->
+        <!-- MEMPELAI WANITA -->
+        <!-- ========================= -->
+
+        <div
+          class="person-card"
+          data-aos="fade-left"
+        >
+
+          <img
+            src="assets/mempelai-r.webp"
+            alt=""
+          >
+
+          <h3>
+            Aisyah Putri
+          </h3>
+
+          <p>
+
+            Putri dari
+            <br>
+            Bpk. Yusuf & Ibu Rahma
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- COUNTDOWN SECTION -->
+    <!-- ========================= -->
+
+    <section
+      class="countdown-section"
+      id="countdown"
+    >
+
+      <!-- TITLE -->
+
+      <div
+        class="section-title"
+        data-aos="fade-up"
+      >
+
+        <p>
+          Save The Date
+        </p>
+
+        <h2>
+          Menuju Hari Bahagia
+        </h2>
+
+      </div>
+
+      <!-- COUNTDOWN -->
+
+      <div
+        class="countdown"
+        data-aos="zoom-in"
+      >
+
+        <!-- HARI -->
+
+        <div class="time-box">
+
+          <h3 id="days">00</h3>
+
+          <span>Hari</span>
+
+        </div>
+
+        <!-- JAM -->
+
+        <div class="time-box">
+
+          <h3 id="hours">00</h3>
+
+          <span>Jam</span>
+
+        </div>
+
+        <!-- MENIT -->
+
+        <div class="time-box">
+
+          <h3 id="minutes">00</h3>
+
+          <span>Menit</span>
+
+        </div>
+
+        <!-- DETIK -->
+
+        <div class="time-box">
+
+          <h3 id="seconds">00</h3>
+
+          <span>Detik</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =========================
+     EVENT SECTION
+========================= -->
+
+<section class="event-section" id="event">
+
+  <div class="event-bg-shadow left"></div>
+  <div class="event-bg-shadow right"></div>
+
+  <p class="event-label">
+    Wedding Event
+  </p>
+
+  <h2 class="event-title">
+    Akad & Resepsi
+  </h2>
+
+  <div class="event-wrapper">
+
+    <!-- AKAD -->
+
+    <div class="event-card" data-aos="fade-up">
+
+      <div class="event-icon">
+        <i class="fa-solid fa-mosque"></i>
+      </div>
+
+      <h3>Akad Nikah</h3>
+
+      <div class="event-divider">
+        <span></span>
+        <i class="fa-regular fa-heart"></i>
+        <span></span>
+      </div>
+
+      <div class="event-date">
+
+        <div class="event-side">
+          <p>Senin</p>
+        </div>
+
+        <div class="event-center">
+          <h1>12</h1>
+          <span>Januari</span>
+        </div>
+
+        <div class="event-side">
+          <p>2026</p>
+        </div>
+
+      </div>
+
+      <div class="event-time">
+        <i class="fa-regular fa-clock"></i>
+        08.00 WIB
+      </div>
+
+      <div class="event-location">
+
+        <h4>
+          <i class="fa-solid fa-location-dot"></i>
+          Lokasi Acara
+        </h4>
+
+        <p>
+          Masjid Raya Al-Azhar Jababeka Cikarang
+        </p>
+
+        <span>
+          Jl. Dr. Cipto Mangunkusumo,
+          Cikarang Utara, Bekasi
+        </span>
+
+      </div>
+
+      <a href="https://maps.app.goo.gl/1FXhzZJkrom4Po4G6" class="event-button" target="_blank"
+rel="noopener noreferrer">
+        <i class="fa-solid fa-map-location-dot"></i>
+        Lihat Lokasi
+      </a>
+
+    </div>
+
+    <!-- RESEPSI -->
+
+    <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+
+      <div class="event-icon">
+        <i class="fa-solid fa-envelope-open-text"></i>
+      </div>
+
+      <h3>Resepsi</h3>
+
+      <div class="event-divider">
+        <span></span>
+        <i class="fa-regular fa-heart"></i>
+        <span></span>
+      </div>
+
+      <div class="event-date">
+
+        <div class="event-side">
+          <p>Senin</p>
+        </div>
+
+        <div class="event-center">
+          <h1>12</h1>
+          <span>Januari</span>
+        </div>
+
+        <div class="event-side">
+          <p>2026</p>
+        </div>
+
+      </div>
+
+      <div class="event-time">
+        <i class="fa-regular fa-clock"></i>
+        11.00 WIB - Selesai
+      </div>
+
+      <div class="event-location">
+
+        <h4>
+          <i class="fa-solid fa-location-dot"></i>
+          Lokasi Acara
+        </h4>
+
+        <p>
+          Gedung Serbaguna Green Palace
+        </p>
+
+        <span>
+          Jl. Melati Indah No. 21,
+          Bekasi, Jawa Barat
+        </span>
+
+      </div>
+
+      <a href="https://maps.app.goo.gl/1FXhzZJkrom4Po4G6" class="event-button" target="_blank"
+rel="noopener noreferrer">
+        <i class="fa-solid fa-map-location-dot"></i>
+        Lihat Lokasi
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- ========================= -->
+    <!-- NASEHAT SECTION -->
+    <!-- ========================= -->
+
+    <section
+      class="advice-section"
+      id="advice"
+    >
+
+      <!-- TITLE -->
+
+      <div
+        class="section-title"
+        data-aos="fade-up"
+      >
+
+        <p>
+          Wedding Advice
+        </p>
+
+        <h2>
+          Nasehat Pernikahan
+        </h2>
+
+      </div>
+
+      <!-- CARD -->
+
+      <div
+        class="advice-card"
+        data-aos="zoom-in"
+      >
+
+        <h3>
+
+          وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ
+          مِنْ أَنْفُسِكُمْ أَزْوَاجًا
+
+        </h3>
+
+        <p>
+
+          “Dan di antara tanda-tanda kekuasaan-Nya
+          ialah Dia menciptakan pasangan-pasangan
+          untukmu dari jenismu sendiri.”
+
+        </p>
+
+        <span>
+          QS. Ar Rum : 21
+        </span>
+
+      </div>
+
+    </section>
+
+    <!-- ========================= -->
+<!-- LOVE STORY SECTION -->
+<!-- ========================= -->
+
+<section
+  class="story-section"
+  id="story"
+>
+
+  <!-- TITLE -->
+
+  <div
+    class="section-title"
+    data-aos="fade-up"
+  >
+
+    <p>
+      Our Journey
+    </p>
+
+    <h2>
+      Love Story
+    </h2>
+
+  </div>
+
+  <!-- STORY WRAPPER -->
+
+  <div class="story-wrapper">
+
+    <!-- ITEM 1 -->
+
+    <div
+      class="story-item"
+      data-aos="fade-right"
+    >
+
+      <div class="story-year">
+        2022
+      </div>
+
+      <div class="story-content">
+
+        <h3>
+          Pertama Bertemu
+        </h3>
+
+        <p>
+
+          Tidak ada yang kebetulan di dunia ini,
+          semua sudah tersusun rapih oleh Sang Maha Kuasa.
+          Kami dipertemukan dalam satu lingkungan
+          yang kemudian membawa kami saling mengenal.
+
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- ITEM 2 -->
+
+    <div
+      class="story-item reverse"
+      data-aos="fade-left"
+    >
+
+      <div class="story-year">
+        2023
+      </div>
+
+      <div class="story-content">
+
+        <h3>
+          Menjalin Hubungan
+        </h3>
+
+        <p>
+
+          Seiring berjalannya waktu,
+          kami semakin dekat dan saling memahami.
+          Banyak cerita, doa, dan perjalanan
+          yang kami lalui bersama.
+
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- ITEM 3 -->
+
+    <div
+      class="story-item"
+      data-aos="fade-right"
+    >
+
+      <div class="story-year">
+        2026
+      </div>
+
+      <div class="story-content">
+
+        <h3>
+          Menuju Pernikahan
+        </h3>
+
+        <p>
+
+          Dengan restu kedua orang tua dan niat ibadah,
+          kami memutuskan untuk melangkah
+          ke jenjang pernikahan.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- ADAB SECTION -->
+<!-- ========================= -->
+
+<section
+  class="adab-section"
+  id="adab"
+>
+
+  <!-- TITLE -->
+
+  <div
+    class="section-title white"
+    data-aos="fade-up"
+  >
+
+    <p>
+      Wedding Etiquette
+    </p>
+
+    <h2>
+      Adab Menghadiri Pernikahan
+    </h2>
+
+  </div>
+
+  <!-- ADAB WRAPPER -->
+
+  <div class="adab-wrapper">
+
+    <!-- ITEM -->
+
+    <div
+      class="adab-card"
+      data-aos="zoom-in"
+    >
+
+      <div class="adab-icon">
+        🕌
+      </div>
+
+      <p>
+        Memperhatikan
+        Waktu Sholat
+      </p>
+
+    </div>
+
+    <!-- ITEM -->
+
+    <div
+      class="adab-card"
+      data-aos="zoom-in"
+      data-aos-delay="100"
+    >
+
+      <div class="adab-icon">
+        🤲
+      </div>
+
+      <p>
+        Mendoakan
+        Kedua Mempelai
+      </p>
+
+    </div>
+
+    <!-- ITEM -->
+
+    <div
+      class="adab-card"
+      data-aos="zoom-in"
+      data-aos-delay="200"
+    >
+
+      <div class="adab-icon">
+        🍽️
+      </div>
+
+      <p>
+        Menjaga Adab
+        Makan & Minum
+      </p>
+
+    </div>
+
+    <!-- ITEM -->
+
+    <div
+      class="adab-card"
+      data-aos="zoom-in"
+      data-aos-delay="300"
+    >
+
+      <div class="adab-icon">
+        👔
+      </div>
+
+      <p>
+        Memakai Pakaian
+        Yang Sopan
+      </p>
+
+    </div>
+
+    <!-- ITEM -->
+
+    <div
+      class="adab-card"
+      data-aos="zoom-in"
+      data-aos-delay="400"
+    >
+
+      <div class="adab-icon">
+        🚫
+      </div>
+
+      <p>
+        Hindari
+        Ghibah
+      </p>
+
+    </div>
+
+    <!-- ITEM -->
+
+    <div
+      class="adab-card"
+      data-aos="zoom-in"
+      data-aos-delay="500"
+    >
+
+      <div class="adab-icon">
+        🚭
+      </div>
+
+      <p>
+        Dilarang
+        Merokok
+      </p>
+
+    </div>
+
+    <!-- ITEM -->
+
+<div
+  class="adab-card adab-full"
+  data-aos="zoom-in"
+  data-aos-delay="600"
+>
+
+  <div class="adab-icon">
+    🚻
+  </div>
+
+  <h3>
+    Area Ikhwan & Akhwat Dipisah
+  </h3>
+
+  <p>
+
+    Demi menjaga kenyamanan dan adab bersama,
+    tempat duduk tamu laki-laki dan perempuan
+    dipisahkan selama acara berlangsung.
+
+  </p>
+
+</div>
+
+  </div>
+
+</section>
+
+    <!-- ========================= -->
+    <!-- KADO SECTION -->
+    <!-- ========================= -->
+
+    <section
+  class="gift-section"
+  id="gift"
+>
+
+  <div
+    class="gift-card"
+    data-aos="zoom-in"
+  >
+
+    <div class="gift-icon">
+      <i class="fa-solid fa-gift"></i>
+    </div>
+
+    <h2>
+      Wedding Gift
+    </h2>
+
+    <p>
+
+      “Doa restu dan kehadiran anda merupakan
+      karunia yang sangat berarti bagi kami,
+      namun jika berhalangan hadir dan ingin
+      memberikan ungkapan tanda kasih,
+      dapat memberi kado secara digital
+      ataupun fisik.”
+
+    </p>
+
+    <button
+      class="gift-button"
+      id="openGift"
+    >
+
+      <i class="fa-solid fa-gift"></i>
+
+      Klik Disini
+
+    </button>
+
+  </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- DOA PENUTUP -->
+<!-- ========================= -->
+
+<section
+  class="closing-prayer"
+  id="closing"
+>
+
+  <!-- OVERLAY -->
+
+  <div class="closing-overlay"></div>
+
+<div class="closing-ornament">
+
+  <span></span>
+
+  <i class="fa-solid fa-heart"></i>
+
+  <span></span>
+
+</div>
+
+  <!-- CONTENT -->
+
+  <div class="closing-content">
+
+    <!-- ARAB -->
+
+    <h2
+      class="arabic-text"
+      data-aos="fade-up"
+    >
+
+      بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا
+      وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+
+    </h2>
+
+    <!-- ARTI -->
+
+    <p
+      class="translation"
+      data-aos="fade-up"
+    >
+
+      “Semoga Allah memberkahi kalian berdua,
+      melimpahkan keberkahan atas kalian,
+      dan mengumpulkan kalian dalam kebaikan.”
+
+    </p>
+
+    <!-- SOURCE -->
+
+    <span
+      class="hadist-source"
+      data-aos="fade-up"
+    >
+
+      (HR. Abu Dawud & Tirmidzi)
+
+    </span>
+
+    <!-- UCAPAN -->
+
+    <div
+      class="thanks-box"
+      data-aos="zoom-in"
+    >
+
+      <p>
+
+        Merupakan suatu kehormatan dan kebahagiaan
+        bagi kami apabila Bapak/Ibu/Saudara/i
+        berkenan hadir dan memberikan doa restu
+        kepada kedua mempelai.
+
+      </p>
+
+      <p class="thanks-end">
+
+        Atas kehadiran dan doanya,
+        kami ucapkan terima kasih.
+
+      </p>
+
+    </div>
+
+    <!-- COUPLE -->
+
+    <div
+      class="closing-couple-wrapper"
+      data-aos="fade-up"
+    >
+
+      <img
+        src="assets/couple.webp"
+        class="closing-couple-img"
+        alt="Couple"
+      >
+
+      <h3 class="closing-initial">
+        IA
+      </h3>
+
+      <h2 class="closing-name">
+        Ilham & Aisyah
+      </h2>
+
+      <div class="closing-family">
+
+        <p>
+          Keluarga Besar
+        </p>
+
+        <span>
+          Bapak Ahmad & Ibu Lina
+        </span>
+
+        <span>
+          Bapak H. Rahmat & Ibu Siti
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  </main>
+
+  <!-- ========================= -->
+  <!-- MUSIC -->
+  <!-- ========================= -->
+
+  <audio
+    id="music"
+    loop
+  >
+
+    <source
+      src="Sound.MP3"
+      type="audio/MP3"
+    >
+
+  </audio>
+
+  <!-- ========================= -->
+  <!-- MUSIC BUTTON -->
+  <!-- ========================= -->
+
+  <button
+  class="music-btn"
+  id="musicBtn"
+>
+
+  <i
+    class="fa-solid fa-music"
+    id="musicIcon"
+  ></i>
+
+</button>
+
+  <!-- ========================= -->
+  <!-- AOS -->
+  <!-- ========================= -->
+
+ <!-- =========================
+     GIFT MODAL
+========================= -->
+
+<div
+  class="gift-modal"
+  id="giftModal"
+>
+
+  <div class="gift-modal-box">
+
+    <!-- CLOSE -->
+
+    <button
+      class="gift-modal-close"
+      id="closeGift"
+    >
+
+      <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+    <!-- CARD 1 -->
+
+    <div class="gift-modal-card">
+
+      <!-- LOGO -->
+
+      <div class="gift-modal-header">
+
+        <img
+          src="assets/gift-bsi.webp"
+          alt=""
+        >
+
+      </div>
+
+      <!-- BUTTON -->
+
+      <button
+        class="gift-modal-copy"
+        onclick="copyRek('5563728363')"
+      >
+
+        <i class="fa-regular fa-copy"></i>
+
+        Copy
+
+      </button>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="gift-modal-card">
+
+      <div class="gift-modal-header">
+
+        <img
+          src="assets/gift-gopay.webp"
+          alt=""
+        >
+
+      </div>
+
+      <button
+        class="gift-modal-copy"
+        onclick="copyRek('084788224510')"
+      >
+
+        <i class="fa-regular fa-copy"></i>
+
+        Copy
+
+      </button>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="gift-modal-card">
+
+      <div class="gift-modal-header">
+
+        <img
+          src="assets/gift-rumah.webp"
+          alt=""
+        >
+
+      </div>
+
+      </div>
+
+      <button
+        class="gift-modal-copy"
+        onclick="copyAlamat()"
+      >
+
+        <i class="fa-regular fa-copy"></i>
+
+        Salin Alamat
+
+      </button>
+
+    </div>
+
+</div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- ========================= -->
+  <!-- JS -->
+  <!-- ========================= -->
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
