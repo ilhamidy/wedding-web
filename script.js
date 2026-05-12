@@ -57,14 +57,6 @@ document.getElementById(
   "music"
 );
 
-/*
-  Main content disembunyikan
-  saat awal website dibuka
-*/
-
-mainContent.style.display =
-"none";
-
 /* =========================
    OPEN INVITATION
 ========================= */
@@ -80,183 +72,67 @@ mainContent.style.display =
 if(openInvitation){
 
   openInvitation.addEventListener(
-    "click",
-
-    async ()=>{
-
-      /* Fade opening */
-
-      opening.style.opacity =
-      "0";
-
-      setTimeout(()=>{
-
-        /* Hide opening */
-
-        opening.style.display =
-        "none";
-
-        /* Show main content */
-
-        mainContent.style.display =
-        "block";
-
-        /* Refresh AOS */
-
-        setTimeout(()=>{
-
-          AOS.refresh();
-
-        },300);
-
-      },1200);
-
-      /* Play music */
-
-      try{
-
-        await music.play();
-
-      }catch(err){
-
-        console.log(err);
-
-      }
-
-    }
-  );
-
-}
-
-/* =========================
-   GIFT MODAL
-========================= */
-
-/*
-  Mengambil element popup gift
-*/
-
-const giftModal =
-document.getElementById(
-  "giftModal"
-);
-
-const openGift =
-document.getElementById(
-  "openGift"
-);
-
-const closeGift =
-document.getElementById(
-  "closeGift"
-);
-
-/* =========================
-   OPEN MODAL
-========================= */
-
-if(openGift){
-
-  openGift.addEventListener(
-    "click",
-    ()=>{
-
-      giftModal.classList.add(
-        "active"
-      );
-
-    }
-  );
-
-}
-
-/* =========================
-   CLOSE MODAL
-========================= */
-
-if(closeGift){
-
-  closeGift.addEventListener(
-    "click",
-    ()=>{
-
-      giftModal.classList.remove(
-        "active"
-      );
-
-    }
-  );
-
-}
-
-/* =========================
-   CLOSE MODAL OUTSIDE CLICK
-========================= */
-
-/*
-  Menutup modal ketika klik
-  area gelap di luar popup
-*/
-
-window.addEventListener(
   "click",
-  (e)=>{
 
-    if(e.target === giftModal){
+  async ()=>{
 
-      giftModal.classList.remove(
-        "active"
+    /* Fade opening */
+
+    opening.style.opacity =
+    "0";
+
+    opening.style.pointerEvents =
+    "none";
+
+    setTimeout(()=>{
+
+      /* Hide opening */
+
+      opening.style.display =
+      "none";
+
+      /* Show main content */
+
+      mainContent.classList.add(
+        "show"
       );
+
+      /* Show navbar */
+
+      document.querySelector(
+        ".floating-nav"
+      )?.classList.add("show");
+
+      document.querySelector(
+        ".floating-nav-mobile"
+      )?.classList.add("show");
+
+      /* Show music button */
+
+      document.querySelector(
+        ".music-btn"
+      )?.classList.add("show");
+
+      /* Refresh AOS */
+
+      AOS.refresh();
+
+    },1200);
+
+    /* Play music */
+
+    try{
+
+      await music.play();
+
+    }catch(err){
+
+      console.log(err);
 
     }
 
   }
 );
-
-/* =========================
-   COPY REKENING
-========================= */
-
-/*
-  Function copy rekening
-*/
-
-function copyRek(text){
-
-  navigator.clipboard.writeText(
-    text
-  );
-
-  alert(
-    "Nomor berhasil disalin"
-  );
-
-}
-
-/* =========================
-   COPY ALAMAT
-========================= */
-
-/*
-  Function copy alamat rumah
-*/
-
-function copyAlamat(){
-
-  navigator.clipboard.writeText(
-`LEKKER JADOEL
-Rumah pagar hitam disamping rumah,
-Jl. Al Barokah No.1 lantai 2,
-RT 008/001,
-Bangetayu Wetan,
-Kec. Genuk,
-Kota Semarang,
-Jawa Tengah 50115`
-  );
-
-  alert(
-    "Alamat berhasil disalin"
-  );
 
 }
 
